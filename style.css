@@ -1,0 +1,142 @@
+body{
+    margin: 10px;
+    height: 100vh;
+    background-color: rgb(116, 243, 243);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px gray;
+    position: relative;
+}
+
+.cinta1,.cinta2,.cinta3,.cinta4{
+    display: flex;
+    flex-direction: column;
+}
+
+.gancho1{
+    box-shadow: 1px 1px 1px black;
+    border-radius: 150px;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    background-color: white;
+}
+
+.gancho2{
+    box-shadow: 1px 1px 1px black;
+    border-radius: 150px;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 37%;
+    left: 15%;
+    background-color: white;
+}
+
+.gancho3{
+    box-shadow: 1px 1px 1px black;
+    border-radius: 150px;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 37%;
+    left: 83%;
+    background-color: white;
+}
+
+.gancho4{
+    box-shadow: 1px 1px 1px black;
+    border-radius: 150px;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 37%;
+    left: 88%;
+    background-color: white;
+}
+.cuadro1{
+    display: grid;
+    background-color: salmon;
+    margin-top: 0;
+    padding: 30px;
+    text-align: start;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.cuadro1 h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+.cuadro1 h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.cuadro2{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.lunes,.martes,.miercoles,.jueves,.viernes,.sabado,.domingo{
+    text-align: center;
+    color: salmon;
+}
+
+.dia{
+    margin: 10px;
+    color: black;
+}
+
+.dia:hover{
+    color: rgb(255, 122, 122);
+}
+
+.color{
+    color: rgb(155, 155, 155);
+}
+
+
+
+@media (max-width: 1467px) {
+    section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1091px) {
+    section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 713px) {
+    section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        margin-top: 20px;
+    }
+}
